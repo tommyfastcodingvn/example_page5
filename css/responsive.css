@@ -10,10 +10,36 @@
         justify-content: space-between;
         margin-top: 16px;
     }
+
+    .l-header_company-content{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .l-header_company-content-description{
+        max-width: 100%;
+        margin-top: 12px;
+    }
+    .l-footer_content{
+        display: block;
+    }
+    .l-footer_logo{
+        text-align: center;
+    }
+    .l-footer_content .l-header_nav-logo{
+        margin: 0 auto;
+    }
+    .l-footer_link{
+        margin-top: 32px;
+        text-align:center;
+    }
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
+    .wrapper{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
     .l-header_nav {
         display: flex;
         position: relative;
@@ -65,9 +91,71 @@
         max-width: 100%;
     }
     .l-header_content-button>button{
-        width: 90%;
-        margin: 5px auto;
+        width: 100%;
+        margin: 10px auto;
         justify-content: center;
         border: 1px solid white;
+    }
+    .l-header_company{
+        padding: 50px 0;
+        gap: 0px;
+    }
+    .p-section_study .wrapper{
+        padding: 50px 0;
+    }
+    .p-section_service .wrapper{
+        padding: 50px 0;
+    }
+    .p-section_client .wrapper{
+        padding: 50px 0;
+    }
+    .l-footer_content{
+        padding: 50px 0;
+    }
+    .p-section_study-heading{
+        display: block;
+        text-align: center;
+    }
+    .p-section_study-content,.p-section_study-list{
+        margin: 0 auto;
+    }
+    .p-section_study-list{
+        max-width: 100%;
+        margin-top:10px;
+        justify-content: space-around;
+    }
+    .p-section_study-slider-item:nth-child(odd){
+        flex: 1;
+    }
+    .p-section_study-slider-item:nth-child(2){
+        flex: 10;
+    }
+    .p-section_study-slider-item:nth-child(odd):hover .p-section_study-item-content{
+        display: none;
+    }
+    .p-section_service-list{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .p-section_fact-list{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        padding:50px 0;
+    }
+    .p-section_client-content{
+        min-width: 320px;
+    }
+    .p-section_call .wrapper{
+        padding: 32px 16px;
+    }
+    .p-section_call-button{
+        width: 100%;
+        justify-content: center;
+    }
+    .p-section_call-info-item{
+        min-width:0;
+    }
+    .l-container_mode{
+        position: fixed;
+        right: 16px;
+        bottom: 24px;
     }
 }
