@@ -3,61 +3,61 @@
         margin-left: 32px;
         margin-right: 32px;
     }
-    .l-header_nav{
+    .l-header-nav{
         display: block;
     }
-    .l-header_nav-menu{
+    .l-header-nav_menu{
         justify-content: space-between;
         margin-top: 16px;
     }
-    .l-header_content-hero{
+    .l-header-content_hero{
         padding: 100px 60px 16px 60px;
     }
-    .l-header_content-title{
+    .l-header-content_title{
         max-width: 100%;
     }
-    .l-header_content-description{
+    .l-header-content_description{
         max-width: 100%;
     }
-    .l-header_content-button{
+    .l-header-content_button{
         max-width: 100%;
         gap: 100px;
     }
-    .l-header_content-button>button{
+    .l-header-content_button>button{
         flex: 1;
         justify-content: center;
     }
     
-    .l-header_content-img{
+    .l-header-content_img{
         position: static;
         overflow: hidden;
         height: auto;
     }
-    .l-header_content-img-person{
+    .l-header-content_img-person{
         margin: 0 auto;
         max-height: 400px;
         width: 70%;
         object-fit: cover;       
         object-position: top;
     }
-    .l-header_company-content{
+    .l-header-company_content{
         max-width: 100%;
         margin-bottom: 50px;
     }
-    .l-header_company-content-description{
+    .l-header-company_content-description{
         max-width: 100%;
         margin-top: 12px;
     }
-    .l-footer_content{
+    .l-footer-content{
         display: block;
     }
-    .l-footer_logo{
+    .l-footer-logo{
         text-align: center;
     }
-    .l-footer_content .l-header_nav-logo{
+    .l-footer-content .l-header-nav_logo{
         margin: 0 auto;
     }
-    .l-footer_link{
+    .l-footer-link{
         margin-top: 32px;
         text-align:center;
     }
@@ -69,15 +69,15 @@
         margin-left: 16px;
         margin-right: 16px;
     }
-    .l-header_nav {
+    .l-header-nav {
         display: flex;
         position: relative;
         align-items: center;
     }
-    .l-header_nav-toggle {
+    .l-header-nav_toggle {
         display: block; 
     }
-    .l-header_nav-menu {
+    .l-header-nav_menu {
         display: none;             
         flex-direction: column;    
         position: absolute; 
@@ -91,15 +91,15 @@
         border-radius: 8px;
         z-index: 999;              
     }
-    .menu-checkbox:checked ~ .l-header_nav-menu {
+    .menu-checkbox:checked ~ .l-header-nav_menu {
         display: flex; 
     }
-    .l-header_nav-item {
+    .l-header-nav_item {
         width: 100%;
         text-align: center;
         padding: 12px 0;
     }
-    .l-header_nav-button {
+    .l-header-nav_button {
         width: 100%; 
         font-weight: 400;
         text-transform: none;
@@ -109,93 +109,97 @@
         color: #556070;
         font-size: 16px;
     }
-    .l-header_content-hero{
+    .l-header-content_hero{
         padding:64px 32px 16px 32px;
         text-align: center;
     }   
-    .l-header_content-title {
-        font-size: clamp(28px, 5vw, 64px);
-        line-height: 40px;
-    }
-    .l-header_content-button{
+    .l-header-content_button{
         display: block;
         max-width: 100%;
     }
-    .l-header_content-button>button{
+    .l-header-content_button>button{
         width: 100%;
         margin: 10px auto;
         justify-content: center;
         border: 1px solid white;
     }
-    .l-header_company{
+    .l-header-company{
         padding: 50px 0;
         gap: 0px;
     }
-    .p-section_study .wrapper{
+    .p-section-study .wrapper{
         padding: 50px 0;
     }
-    .p-section_service .wrapper{
+    .p-section-service .wrapper{
         padding: 50px 0;
     }
-    .p-section_client .wrapper{
+    .p-section-client .wrapper{
         padding: 50px 0;
     }
-    .l-footer_content{
+    .l-footer-content{
         padding: 50px 0;
     }
-    .p-section_study-heading{
+    .p-section-study_heading{
         display: block;
         text-align: center;
     }
-    .p-section_study-content,.p-section_study-list{
+    .p-section-study_content,.p-section-study_list{
         margin: 0 auto;
     }
-    .p-section_study-list{
+    .p-section-study_list{
         max-width: 100%;
         margin-top:10px;
         justify-content: space-around;
     }
-    .p-section_study-slider-item:nth-child(odd){
+    .p-section-study_slider-item:nth-child(odd){
         flex: 1;
     }
-    .p-section_study-slider-item:nth-child(2){
+    .p-section-study_slider-item:nth-child(2){
         flex: 10;
     }
-    .p-section_study-slider-item:nth-child(odd):hover .p-section_study-item-content{
+    .p-section-study_slider-item:nth-child(odd):hover .p-section-study_item-content{
         display: none;
     }
-    .p-section_service-list{
+    .p-section-service_list{
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     }
-    .p-section_fact-list{
+    .p-section-fact_list{
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
         padding:50px 0;
     }
-    .p-section_client-content{
+    .p-section-client_content{
         min-width: 320px;
     }
-    .p-section_client-play{
+    .p-section-client_testimonial{
+        display: block;
+    }
+    .p-section-client_testimonial-list{
+        margin-top: 16px;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+    .p-section-client_play{
         min-height: 0px;
         height: auto;
         overflow: hidden;
     }
-    .p-section_client-play-img{
+    .p-section-client_play-img{
         height: auto;
     }
-    .p-section_client-play-icon{
+    .p-section-client_play-icon{
         padding: 16px;
     }
-    .p-section_call .wrapper{
+    .p-section-call .wrapper{
         padding: 32px 16px;
     }
-    .p-section_call-button{
+    .p-section-call_button{
         width: 100%;
         justify-content: center;
     }
-    .p-section_call-info-item{
+    .p-section-call_info-item{
         min-width:0;
     }
-    .l-container_mode{
+    .l-container-mode{
         position: fixed;
         right: 16px;
         bottom: 24px;
