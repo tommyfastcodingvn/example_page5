@@ -80,8 +80,9 @@
     .l-header_nav-menu {
         display: none;             
         flex-direction: column;    
-        position: absolute;        
-        top: 100%;                 
+        position: absolute; 
+        gap: 12px;       
+        top: 60%;                 
         left: 0;
         width: 100%;               
         background-color: var(--white); 
@@ -105,7 +106,8 @@
         padding: 0;
         background-color: transparent;
         border-radius: 4px;
-        color: inherit;
+        color: #556070;
+        font-size: 16px;
     }
     .l-header_content-hero{
         padding:64px 32px 16px 32px;
