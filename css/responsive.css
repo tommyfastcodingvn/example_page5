@@ -10,7 +10,36 @@
         justify-content: space-between;
         margin-top: 16px;
     }
-
+    .l-header_content-hero{
+        padding: 100px 60px 16px 60px;
+    }
+    .l-header_content-title{
+        max-width: 100%;
+    }
+    .l-header_content-description{
+        max-width: 100%;
+    }
+    .l-header_content-button{
+        max-width: 100%;
+        gap: 100px;
+    }
+    .l-header_content-button>button{
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .l-header_content-img{
+        position: static;
+        overflow: hidden;
+        height: auto;
+    }
+    .l-header_content-img-person{
+        margin: 0 auto;
+        max-height: 400px;
+        width: 70%;
+        object-fit: cover;       
+        object-position: top;
+    }
     .l-header_company-content{
         max-width: 100%;
         margin-bottom: 50px;
@@ -79,7 +108,7 @@
         color: inherit;
     }
     .l-header_content-hero{
-        padding:64px 32px;
+        padding:64px 32px 16px 32px;
         text-align: center;
     }   
     .l-header_content-title {
@@ -142,6 +171,17 @@
     }
     .p-section_client-content{
         min-width: 320px;
+    }
+    .p-section_client-play{
+        min-height: 0px;
+        height: auto;
+        overflow: hidden;
+    }
+    .p-section_client-play-img{
+        height: auto;
+    }
+    .p-section_client-play-icon{
+        padding: 16px;
     }
     .p-section_call .wrapper{
         padding: 32px 16px;
