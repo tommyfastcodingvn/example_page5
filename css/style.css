@@ -174,7 +174,7 @@ select {
     gap: 32px;
     max-width: 361px;
 }
-.l-header-content_button>button{
+.l-header-content_button>a{
     display: flex;
     gap: 12px;
     align-items: center;
@@ -182,7 +182,7 @@ select {
     border-radius: 6px;
     cursor: pointer;
 }
-.l-header-content_button>button:last-child{
+.l-header-content_button>a:last-child{
     gap: 16px;
 }
 .l-header-content_button-hire{
@@ -246,25 +246,29 @@ select {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 24px;
+    position: relative;
+}
+.l-header-company_item:nth-child(3n+2){
+    position: relative;
+    top: 40px;
 }   
-
-.l-header-company_item{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.l-header-company_item-link{
+    position: relative;
 }
-.l-header-company_item:nth-child(odd)
-{
-    padding-bottom: clamp(0px, 4vw, 40px);
-}
-.l-header-company_item:nth-child(even)
-{
-    padding-top: clamp(0px, 4vw, 40px);
+.l-header-company_item-link:hover .l-header-company_item-img:nth-child(2){
+    display: block;
 }
 .l-header-company_item-img{
     padding: 24px 0;
     border-radius: 12px;
     background-color: white;
+    margin: 0 auto;
+}
+.l-header-company_item-img:nth-child(2){
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .l-main{
     width: 100%;
