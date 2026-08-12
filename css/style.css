@@ -87,10 +87,6 @@ select {
     gap: 12px;
     align-items: center;
 }
-.l-header-nav__logo-img{
-    width: 48px;
-    height: 48px;
-}
 .l-header-nav__logo-caption
 {
     width: 170px;
@@ -108,14 +104,12 @@ select {
     width:max-content;
     color: #556070;
     cursor: pointer;
-    transition: transform 0.3s ease;
+}
+.l-header-nav__item-link{
+    transition: 0.3s ease
 }
 .l-header-nav__item-link:hover{
-    text-shadow: 
-        0.5px 0 0 #121314,   
-       -0.5px 0 0 #121314,   
-        0 0.5px 0 #121314,   
-        0 -0.5px 0 #121314;
+    text-shadow: 0 0 0 #121314;
 }
 .l-header-nav__item:first-child{
     font-weight: 600;
@@ -129,10 +123,6 @@ select {
     background-color: var(--color-accent);
     border-radius: 4px;
     color: var(--color-text-main);
-}
-.l-header-nav__contact:hover{
-    color: white;
-    box-shadow: inset -1px -1px 0 0 black;
 }
 .p-section-hero{
     width: 100%;
@@ -152,13 +142,13 @@ select {
     padding: 112px 112px 120px 112px;
     z-index: 2;
 }
-.p-section-hero__content-img{
+.p-section-hero__content-image{
     position: absolute;
     top: -16px;
     right: -775px;
     z-index: 1;
 }
-.p-section-hero__content-img-person{
+.p-section-hero__content-image-person{
     width: 58%;
 }
 .p-section-hero__content-title{
@@ -181,29 +171,17 @@ select {
     gap: 32px;
     max-width: 361px;
 }
-.p-section-hero__content-link>a{
+.p-section-hero__content-link>a:last-child{
+    gap: 16px;
+}
+.p-section-hero__content-link-play{
+    padding: 16px 0;
     display: flex;
     gap: 12px;
     align-items: center;
     font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
-}
-.p-section-hero__content-link>a:last-child{
-    gap: 16px;
-}
-.p-section-hero__content-link-hire:hover{
-    color: white;
-    box-shadow: inset -1px -1px 0px 0px white;
-}
-.p-section-hero__content-link-hire:hover .p-section-hero__content-link-hire-icon-hover{
-    display: block;
-}
-.p-section-hero__content-link-hire:hover .p-section-hero__content-link-hire-icon{
-    opacity: 0;
-}
-.p-section-hero__content-link-play{
-    padding: 16px 0;
 }
 .p-section-hero__content-link img{
     height: 24px;
@@ -222,7 +200,6 @@ select {
 }
 .p-section-hero__content-link-hire{
     padding: 16px 32px;
-    background-color: var(--color-accent);
 }
 .p-section-hero__content-link-hire-text, .p-section-hero__content-link-play-text{
     white-space: nowrap;
@@ -282,7 +259,7 @@ select {
     display: block;
 }
 .p-section-hero__company-item-link:hover .p-section-hero__company-item-img:nth-child(2){
-    display: block;
+    opacity: 1;
 }
 .p-section-hero__company-item-img{
     padding: 24px 0;
@@ -292,7 +269,8 @@ select {
     display: block;
 }
 .p-section-hero__company-item-img:nth-child(2){
-    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     position: absolute;
     top: 0;
     left: 50%;
@@ -342,6 +320,7 @@ select {
     border-radius: 100px;
     cursor: pointer;
     border: 2px solid #F3DB61;
+    transition: background-color 0.3s ease;
 }
 .p-section-study__item>button:hover {
     background-color: #F3DB61;
@@ -361,8 +340,8 @@ select {
     padding-top: 126.41%; 
 }
 .p-section-study__slider-item:hover .p-section-study__item-content{
-    display: flex;
-    background-color: rgba(19, 34, 56, 0.8);
+    opacity: 1;
+    point-event: auto;
 }
 .p-section-study__slider-img{
     position: absolute; 
@@ -385,7 +364,11 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
+    opacity: 0;
+    background-color: rgba(19, 34, 56, 0.8);
+    transition: opacity 0.3s ease; 
+    point-event:  none;
 }
 .p-section-study__item-tool{
     display: flex;
@@ -706,18 +689,8 @@ select {
 }
 .p-section-call__link{
     margin-top:32px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    background-color: #F3DB61;
-    border-radius: 6px;
     padding: 0 32px;
     max-width: max-content;
-}
-.p-section-call__link:hover{
-    color: #F3DB61;
-    background-color: #0c6d38;
-    box-shadow: inset 0px 0px 1px 1px  #F3DB61;
 }
 .p-section-call__link-text{
     text-transform: uppercase;
@@ -805,12 +778,11 @@ select {
     color: #5E6971;
     margin-bottom: 18px;
 }
+.l-footer-link__item-link{
+    transition: 0.3s ease;
+}
 .l-footer-link__item-link:hover{
-    text-shadow: 
-        0.5px 0 0 #121314,   
-       -0.5px 0 0 #121314,   
-        0 0.5px 0 #121314,   
-        0 -0.5px 0 #121314;
+    text-shadow: 0 0 0 #121314;
 }
 .l-footer-link__item:last-child{
     margin-bottom: 0;
