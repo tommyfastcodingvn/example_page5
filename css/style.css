@@ -551,7 +551,17 @@ select {
 }
 .p-section-fact__item{
     text-align: center;
+    position: relative; 
+}
+.p-section-fact__item-box{
     position: relative;
+    width: 100%;        
+    overflow: hidden;
+}
+.p-section-fact__item-box::before{
+    content: "";
+    padding-top: calc((48/312)*100%);
+    display: block;
 }
 .p-section-fact__item::after{
     position: absolute;
@@ -566,7 +576,12 @@ select {
     display: none;
 }
 .p-section-fact__item-icon{
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .p-section-fact__subtitle{
     font-size: clamp(24px, 3vw, 36px);  
