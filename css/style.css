@@ -36,8 +36,6 @@ body {
     font-family: var(--font-primary);
     color: var(--color-text-main); 
     background-color: var(--white);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 button, 
 input, 
@@ -531,17 +529,6 @@ select {
 }
 .p-section-fact .l-wrapper{
     max-width: 1320px;
-}
-.u-visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
 }
 .p-section-fact__list{
     padding: 100px 0;
