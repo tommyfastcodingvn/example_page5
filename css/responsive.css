@@ -1,8 +1,4 @@
 @media (max-width: 1320px){
-    .l-wrapper{
-        margin-left: 32px;
-        margin-right: 32px;
-    }
     .p-section-hero__content-hero{
         padding: 100px 60px 16px 60px;
     }
@@ -147,11 +143,10 @@
         bottom: 24px;
     }
 }
-
 @media (max-width: 768px){
-    .l-wrapper{
-        margin-left: 16px;
-        margin-right: 16px;
+    .l-wrapper:nth-child(n){
+        width: min(1320px, 100% - 32px);
+        margin: 0 auto;
     }
     .p-section-hero__content-hero{
         padding:64px 32px 16px 32px;

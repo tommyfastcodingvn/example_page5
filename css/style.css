@@ -62,7 +62,7 @@ select {
     background-color: white;
 }
 .l-wrapper {
-    max-width: 1320px;
+    width: min(1320px, 100% - 64px);
     margin: 0 auto;
 }
 .l-header-nav{
@@ -283,7 +283,8 @@ select {
     width: 100%;
 }
 .p-section-study .l-wrapper{
-    max-width: 1320px;
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
     padding: 100px 0;
 }
 .p-section-study__heading{
@@ -440,7 +441,8 @@ select {
     background-color: #E9F0EC;
 }
 .p-section-service .l-wrapper{
-    max-width: 1320px;
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
     padding: 100px 0;
     text-align: center;
 }
@@ -511,7 +513,8 @@ select {
     padding: 6px 0;
 }
 .p-section-fact .l-wrapper{
-    max-width: 1320px;
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
 }
 .p-section-fact__list{
     padding: 100px 0;
@@ -566,6 +569,8 @@ select {
     box-shadow: inset 0px 1px 0px 0px #E6E8EB;
 }
 .p-section-client .l-wrapper{
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
     padding: 100px 0;
     display: flex;
     gap: clamp(40px, 10vw, 136px);
@@ -664,6 +669,8 @@ select {
     transform: translate(-50%,-50%);
 }
 .p-section-call .l-wrapper{
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
     background-color: #0E2B1B;
     border-radius: 16px;
     padding: 88px;
@@ -732,7 +739,8 @@ select {
     font-weight: 500;
 }
 .l-footer .l-wrapper{
-    max-width: 1320px;
+    width: min(1320px, 100% - 64px);
+    margin: 0 auto;
 }
 .l-footer-content{
     display: flex;
