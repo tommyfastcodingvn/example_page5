@@ -106,7 +106,8 @@ select {
     letter-spacing: 0.1px;
 }
 .l-header-nav__item-link{
-    transition: 0.3s ease
+    transition: 0.3s ease;
+    opacity: 1;
 }
 .l-header-nav__item-link:hover{
     text-shadow: 0 0 0 #121314;
@@ -798,6 +799,7 @@ select {
 }
 .l-footer-link__item-link{
     transition: 0.3s ease;
+    opacity: 1;
 }
 .l-footer-link__item-link:hover{
     text-shadow: 0 0 0 #121314;
