@@ -101,9 +101,9 @@ select {
     align-items: center;
 }
 .l-header-nav__item{
-    width:max-content;
     color: #556070;
     cursor: pointer;
+    letter-spacing: 0.1px;
 }
 .l-header-nav__item-link{
     transition: 0.3s ease
@@ -119,10 +119,11 @@ select {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 13.5px 24px;
+    padding: 15.34px 24px;
     background-color: var(--color-accent);
     border-radius: 4px;
     color: var(--color-text-main);
+    line-height: calc(48 / 14);
 }
 .p-section-hero{
     width: 100%;
@@ -157,6 +158,13 @@ select {
     font-weight: 700;
     line-height: calc(72/64);
     color: white;
+    background: url("../assets/icons/icon_h1.png") no-repeat -15px -15px / 92px auto;
+}
+.p-section-hero__content-title-top{
+    padding-left: 79px;
+}
+.p-section-hero__content-title-top-name{
+    letter-spacing: -1.8px;
 }
 .p-section-hero__content-description{
     margin: 32px 0;
@@ -169,7 +177,6 @@ select {
 .p-section-hero__content-link{
     display: flex;
     gap: 32px;
-    max-width: 361px;
 }
 .p-section-hero__content-link>a:last-child{
     gap: 16px;
@@ -245,7 +252,7 @@ select {
 .p-section-hero__company-list{
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap: 24px;
     position: relative;
     padding-bottom: 40px;
@@ -260,6 +267,8 @@ select {
 }
 .p-section-hero__company-item-link:hover .p-section-hero__company-item-img:nth-child(2){
     opacity: 1;
+    box-shadow: 0px 16px 48px 0px rgba(19, 34, 56, 0.12);
+    transform: translateX(-50%) scale(1.1);
 }
 .p-section-hero__company-item-img{
     padding: 24px 0;
@@ -270,11 +279,11 @@ select {
 }
 .p-section-hero__company-item-img:nth-child(2){
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1);
 }
 .l-main{
     width: 100%;
@@ -320,7 +329,7 @@ select {
     padding: 16px;
     border-radius: 100px;
     cursor: pointer;
-    border: 2px solid #F3DB61;
+    box-shadow: inset 0 0 0 2px #F3DB61;
     transition: background-color 0.3s ease;
 }
 .p-section-study__item>button:hover {
@@ -342,7 +351,6 @@ select {
 }
 .p-section-study__slider-item:hover .p-section-study__item-content{
     opacity: 1;
-    point-event: auto;
 }
 .p-section-study__slider-img{
     position: absolute; 
@@ -369,7 +377,6 @@ select {
     opacity: 0;
     background-color: rgba(19, 34, 56, 0.8);
     transition: opacity 0.3s ease; 
-    point-event:  none;
 }
 .p-section-study__item-tool{
     display: flex;
@@ -461,13 +468,14 @@ select {
 }
 .p-section-service__list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(424px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 24px;
     text-align: left;
 }
 .p-section-service__item{
     padding: 40px;
     background-color: white;
+    max-width: 430px;
     border-radius: 8px;
 }
 .p-section-service__item-figure{
@@ -519,7 +527,7 @@ select {
 .p-section-fact__list{
     padding: 100px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(312px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     gap: 24px;
 }
 .p-section-fact__item{
@@ -616,13 +624,13 @@ select {
     margin-top: 49px;
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .p-section-client__testimonial-user{
     display: flex;
     align-items: center;
     gap: 24px;
+    min-width: 230px;
 }
 .p-section-client__testimonial-img{
     width: 72px;
@@ -706,7 +714,7 @@ select {
 }
 .p-section-call__info{
     width: calc((396/1144)*100%);
-    min-width: 320px;
+    min-width: 350px;
 }
 .p-section-call__info-item:first-child{
     margin-bottom: 32px;
@@ -774,17 +782,19 @@ select {
 .l-footer-nav{
     flex: 1;
 }
-.l-footer-link{
+.l-footer-link__list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 24px;
-    flex:1 ;
+    grid-template-columns: repeat(3,200px);
+    column-gap: 24px;
+    row-gap: 18px;
+    grid-template-rows: repeat(4, auto); 
+    grid-auto-flow: column;
 }
 .l-footer-link__item{
     font-size: 18px;
     line-height: calc(26/18);
     color: #5E6971;
-    margin-bottom: 18px;
+    margin: 0;
 }
 .l-footer-link__item-link{
     transition: 0.3s ease;
